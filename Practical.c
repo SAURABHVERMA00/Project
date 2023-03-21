@@ -61,6 +61,7 @@ int main()
     printf("True");
     if(a++)
     printf("False");
+    return 0;
  }
 
 

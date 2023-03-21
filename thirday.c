@@ -80,18 +80,41 @@
     
 //      return 0; 
 // }
-int main(){
-    int n,sum=0,rev;
-    int ch='A',ch1;
-    printf("Enter the Number");
-    scanf("%d",&n);
-    while(n>0){
-        rev=n%10;
-        sum=sum+rev;
-        n=n/10;
-    }
-    ch1 = (int)ch+sum-1;
-    printf("%c",ch1);
+// int main(){
+//     int n,sum=0,rev;
+//     int ch='A',ch1;
+//     printf("Enter the Number");
+//     scanf("%d",&n);
+//     while(n>0){
+//         rev=n%10;
+//         sum=sum+rev;
+//         n=n/10;
+//     }
+//     ch1 = (int)ch+sum-1;
+//     printf("%c",ch1);
 
+//     return 0;
+// }
+
+int main (){
+    int number1 , number2 ;
+
+    printf("Enter the Number1 : ");
+    scanf("%d",&number1);
+    printf("Enter the Number2 : ");
+    scanf("%d",&number2);
+
+    switch (number1<number2)
+    {
+    case 1: 
+        printf("add of number is :%d",number1+number2);
+        break;
+    case 2: printf("Multiply of two number : %d",number1*number2);
+    
+    
+    default:
+        break;
+    }
+    
     return 0;
 }

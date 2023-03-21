@@ -97,3 +97,31 @@
 //     return 0;
 // }
 
+#include <stdio.h>
+int main (){
+    int num ,flag =1;
+    
+        printf("Enter the  Number : ");
+        scanf("%d",&num);
+      
+        for(int j=2 ; j<num; j++){
+            if(num%j==0){
+                flag=0;
+                break;
+
+            }
+        }
+       if(flag==1){
+        printf("Prime Number .");
+        
+        
+       }
+       else {
+        printf("Not a prime");
+        
+       }
+    
+    return 0;
+} 
+
+
